@@ -17,7 +17,7 @@ def main():
     # vez que el usuario realiza algo en la web, por lo que estas variables se cargarán 
     # cada vez que el usuario haga algo).
     if 'df' not in st.session_state:
-        st.session_state.df = pd.read_csv('caracteristicas_vgg19.csv')
+        st.session_state.df = pd.read_csv('../caracteristicas_vgg19.csv')
     if 'caracteristicas_vgg19' not in st.session_state:
         st.session_state.caracteristicas_vgg19 = st.session_state.df.values
     if 'modelo_vgg19' not in st.session_state:
